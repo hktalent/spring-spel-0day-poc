@@ -14,3 +14,7 @@ Message<String> message = MessageBuilder.withPayload("hello")
  				.build();
 function.apply(message);
 ```
+
+<!--
+https://github.com/spring-cloud/spring-cloud-function/commit/0e89ee27b2e76138c16bcba6f4bca906c4f3744f
+-->
