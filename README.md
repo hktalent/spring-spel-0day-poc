@@ -66,7 +66,7 @@ Content-Length: 5
 ## check
 
 ```bash
-curl -v 'https://51pwn.com/dnslog?q=random87535.rce.51pwn.com'
+curl -v -H "user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0" 'https://51pwn.com/dnslog?q=random87535.rce.51pwn.com'
 ```
 
 <!--
